@@ -1,0 +1,117 @@
+{
+  "data_notice": "All records and labels are synthetic. Scores are illustrative only.",
+  "rows": 2500,
+  "simulated_default_rate": 0.2576,
+  "decision_tree_cv_roc_auc_by_depth": {
+    "2": 0.7281856152368871,
+    "3": 0.7444719188622054,
+    "4": 0.7473442158588837,
+    "5": 0.7455531390207644,
+    "6": 0.7391126052710653,
+    "7": 0.7331540930651999,
+    "8": 0.7295971497937443
+  },
+  "decision_tree_chosen_max_depth": 4,
+  "decision_tree_top_features": {
+    "credit_score": 0.8188272605884751,
+    "debt_to_income_ratio": 0.10309578434916118,
+    "annual_income": 0.05304464841416674,
+    "existing_debt": 0.0188986989806247,
+    "loan_amount": 0.0061336076675722676,
+    "age": 0.0,
+    "employment_years": 0.0,
+    "interest_rate": 0.0,
+    "loan_term_months": 0.0,
+    "home_ownership_OTHER": 0.0
+  },
+  "models": {
+    "Logistic Regression": {
+      "accuracy": 0.712,
+      "precision": 0.46441947565543074,
+      "recall": 0.7701863354037267,
+      "f1": 0.5794392523364486,
+      "roc_auc": 0.8131826943671022,
+      "confusion_matrix": [
+        [
+          321,
+          143
+        ],
+        [
+          37,
+          124
+        ]
+      ],
+      "classification_report": {
+        "0": {
+          "precision": 0.8966480446927374,
+          "recall": 0.6918103448275862,
+          "f1-score": 0.781021897810219,
+          "support": 464.0
+        },
+        "1": {
+          "precision": 0.46441947565543074,
+          "recall": 0.7701863354037267,
+          "f1-score": 0.5794392523364486,
+          "support": 161.0
+        },
+        "accuracy": 0.712,
+        "macro avg": {
+          "precision": 0.6805337601740841,
+          "recall": 0.7309983401156565,
+          "f1-score": 0.6802305750733337,
+          "support": 625.0
+        },
+        "weighted avg": {
+          "precision": 0.7853059653087273,
+          "recall": 0.712,
+          "f1-score": 0.7290942083361758,
+          "support": 625.0
+        }
+      }
+    },
+    "Decision Tree": {
+      "accuracy": 0.696,
+      "precision": 0.4468864468864469,
+      "recall": 0.7577639751552795,
+      "f1": 0.5622119815668203,
+      "roc_auc": 0.7678772221032341,
+      "confusion_matrix": [
+        [
+          313,
+          151
+        ],
+        [
+          39,
+          122
+        ]
+      ],
+      "classification_report": {
+        "0": {
+          "precision": 0.8892045454545454,
+          "recall": 0.6745689655172413,
+          "f1-score": 0.7671568627450981,
+          "support": 464.0
+        },
+        "1": {
+          "precision": 0.4468864468864469,
+          "recall": 0.7577639751552795,
+          "f1-score": 0.5622119815668203,
+          "support": 161.0
+        },
+        "accuracy": 0.696,
+        "macro avg": {
+          "precision": 0.6680454961704961,
+          "recall": 0.7161664703362605,
+          "f1-score": 0.6646844221559591,
+          "support": 625.0
+        },
+        "weighted avg": {
+          "precision": 0.7752634032634033,
+          "recall": 0.696,
+          "f1-score": 0.7143630613535737,
+          "support": 625.0
+        }
+      }
+    }
+  }
+}
